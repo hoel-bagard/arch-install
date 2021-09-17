@@ -75,9 +75,11 @@ Set root password: `passwd`
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)\
 ```
-sudo pacman -S amd-ucode wget git exa htop nvtop bat mlocate
+sudo pacman -S amd-ucode wget git exa htop nvtop bat mlocate rsync ripgrep git-delta
 ```
 (Use the `updatedb` command to create the locate database)
+Note: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping).
+Note2: The default du command can be replaced by [dust](https://github.com/bootandy/dust)
 
 ## Boot loader (grub):
 [grub-mkconfig will automatically detect the microcode update and configure GRUB appropriately. After installing the microcode package, regenerate the GRUB config to activate loading the microcode update by running:
