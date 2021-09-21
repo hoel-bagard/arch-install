@@ -80,6 +80,7 @@ sudo pacman -S amd-ucode wget git exa htop nvtop bat mlocate rsync ripgrep git-d
 (Use the `updatedb` command to create the locate database)
 Note: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping).
 Note2: The default du command can be replaced by [dust](https://github.com/bootandy/dust)
+Note3: [bat-extra](https://github.com/eth-p/bat-extras) for things like batgrep and co. (needs to be git cloned and installed).
 
 ## Boot loader (grub):
 [grub-mkconfig will automatically detect the microcode update and configure GRUB appropriately. After installing the microcode package, regenerate the GRUB config to activate loading the microcode update by running:
