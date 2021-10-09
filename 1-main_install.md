@@ -41,6 +41,7 @@ Fstab:
 ```
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
+Note: then edit the fstab to change the relatime to noatime.\
 Chroot:
 ```
 arch-chroot /mnt
