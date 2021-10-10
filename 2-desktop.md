@@ -7,6 +7,10 @@ Enable sddm to have the lockscreen after boot:
 ```
 systemctl enable sddm
 ```
+Also, enable NetworkManager to get the wifi:   (Move this part to the main install?)
+```
+sudo systemctl enable NetworkManager
+```
 
 
 ### KDE tools
