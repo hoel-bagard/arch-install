@@ -34,11 +34,11 @@ git clone --separate-git-dir=$HOME/.dotfiles git@github.com:hoel-bagard/.dotfile
 mv -v ~/myconf-tmp/.* ~/
 mv -v ~/myconf-tmp/README.md ~/
 rmdir myconf-tmp
-source .zshrc
+source ~/.zshrc
 ```
 #### Install plugins
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-source .zshrc
+source ~/.zshrc
 ```
