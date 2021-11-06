@@ -22,6 +22,8 @@ sudo mv *.ttf  /usr/share/fonts/
 cd ..
 rmdir temp_fonts
 ```
+Note: follow the instructions [here](https://github.com/romkatv/powerlevel10k#manual-font-installation) corresponding to the terminal you use.
+
 #### Install powerlevel10k
 ```
 yay -S --noconfirm zsh-theme-powerlevel10k-git
