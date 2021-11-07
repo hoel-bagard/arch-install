@@ -133,3 +133,5 @@ sudo rm -r yay
 pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation
 ```
 
+#### Pacman
+Optional: add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color` in `/etc/pacman.conf/`.
