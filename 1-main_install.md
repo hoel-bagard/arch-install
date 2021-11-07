@@ -134,4 +134,4 @@ pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-
 ```
 
 #### Pacman
-Optional: add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color` in `/etc/pacman.conf/`.
+Optional: add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color` in `/etc/pacman.conf`.
