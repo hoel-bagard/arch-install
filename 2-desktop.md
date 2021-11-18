@@ -45,6 +45,13 @@ sudo pacman -S ktorrent
 ```
 Note: `kdeconnect` might be interesting for some.
 
+## Bluetooth
+```
+pacman -S bluez bluez-utils pulseaudio-bluetooth 
+sudo systemctl enable bluetooth
+```
+reboot.
+
 ## I3
 https://i3wm.org/docs/userguide.html  
 https://wiki.archlinux.org/title/I3  
