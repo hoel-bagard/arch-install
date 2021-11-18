@@ -3,7 +3,7 @@ Identify graphics card with `lspci -v | grep -A1 -e VGA -e 3D`.\
 And install the corresponding driver (usually nvidia, probably already installed at the beginning).
 
 ## KDE
-Install [Plasma](https://wiki.archlinux.org/title/KDE#Plasma) with `sudo pacman -S plasma`.\
+Install [Plasma](https://wiki.archlinux.org/title/KDE#Plasma) with `sudo pacman -S plasma` (the plasma package has  a fair amount of bloat).\
 Enable sddm to have the lockscreen after boot:
 ```
 systemctl enable sddm
