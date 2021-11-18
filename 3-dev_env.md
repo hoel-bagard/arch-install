@@ -40,6 +40,9 @@ git config --global commit.gpgsign true
 
 
 ## Python
+```
+sudo pacman -S python-pip
+```
 ### Flake8 setup
 ```
 sudo pacman -S flake8 python-flake8-docstrings
