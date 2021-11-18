@@ -76,7 +76,7 @@ Set root password: `passwd`
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)\
 ```
-sudo pacman -S amd-ucode man-db wget git exa htop nvtop bat mlocate rsync ripgrep git-delta
+pacman -S amd-ucode man-db wget git exa htop nvtop bat mlocate rsync ripgrep git-delta
 ```
 (Use the `updatedb` command to create the locate database)\
 **Note1**: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping)).\
@@ -119,7 +119,7 @@ systemctl enable sshd.service
 ```
 
 ### Yay
-Must be done as a normal sudo user.
+Must be done as a normal sudo user (you might want to reboot and check that everything work).
 ```
 git clone https://aur.archlinux.org/yay.git
 cd yay
