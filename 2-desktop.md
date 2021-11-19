@@ -47,7 +47,7 @@ Note: `kdeconnect` might be interesting for some.
 
 #### Other
 ```
-sudo pacman -S ark krunner
+sudo pacman -S ark krunner ffmpegthumbs
 ```
 Ark is used to have zip / unzip functionalities within dolphin.
 
