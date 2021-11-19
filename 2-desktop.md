@@ -45,6 +45,12 @@ sudo pacman -S ktorrent
 ```
 Note: `kdeconnect` might be interesting for some.
 
+#### Other
+```
+sudo pacman -S ark 
+```
+Ark is used to have zip / unzip functionalities within dolphin.
+
 ## Bluetooth
 ```
 pacman -S bluez bluez-utils pulseaudio-bluetooth 
