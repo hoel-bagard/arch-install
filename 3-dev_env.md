@@ -41,7 +41,7 @@ git config --global commit.gpgsign true
 
 ## Python
 ```
-sudo pacman -S python-pip
+sudo pacman -S python-pip ipython
 ```
 ### Flake8 setup
 ```
