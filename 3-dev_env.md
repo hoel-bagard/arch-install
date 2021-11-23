@@ -74,6 +74,11 @@ TODO: see what using `max-complexity = 10` would do.
 ```
 sudo pacman -S mypy
 ```
+For spacemacs (not sure what it is, need to check):
+```
+pip install importmagic epc 
+```
+
 #### Packages on the community repo:
 ```
 sudo pacman -S python-opencv fmt tensorboard python-pytorch
