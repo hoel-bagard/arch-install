@@ -74,7 +74,14 @@ TODO: see what using `max-complexity = 10` would do.
 ```
 sudo pacman -S mypy
 ```
-
+#### Packages on the community repo:
+```
+sudo pacman -S python-opencv fmt tensorboard python-pytorch
+```
+Notes:
+- `fmt` is required for python-opencv
+- Use `python-pytorch-cuda` if using a GPU
+ 
 ## Spacemacs
 ```
 sudo pacman -S emacs
