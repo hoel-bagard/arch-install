@@ -74,7 +74,7 @@ TODO: see what using `max-complexity = 10` would do.
 ```
 sudo pacman -S mypy
 ```
-For spacemacs (not sure what it is, need to check):
+To use importmagic within spacemacs (I usually don't, it floods the buffers):
 ```
 pip install importmagic epc 
 ```
