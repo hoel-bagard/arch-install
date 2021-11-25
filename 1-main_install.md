@@ -76,7 +76,7 @@ Set root password: `passwd`
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)\
 ```
-pacman -S amd-ucode man-db pciutils wget git exa htop nvtop bat mlocate rsync ripgrep git-delta unzip
+pacman -S amd-ucode man-db pciutils wget git exa htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs
 ```
 (Use the `updatedb` command to create the locate database)\
 **Note1**: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping)).\
