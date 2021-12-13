@@ -72,7 +72,7 @@ https://wiki.archlinux.org/title/Activating_numlock_on_bootup#X.org
 ## Other tools
 From the official repositories:
 ```
-sudo pacman -S vlc firefox remmina code gimp discord libreoffice-still
+sudo pacman -S vlc firefox remmina freerdp code gimp discord libreoffice-still
 ```
 
 From the AUR:
