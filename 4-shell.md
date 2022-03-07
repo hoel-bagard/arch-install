@@ -4,6 +4,7 @@
 ### oh-my-zsh
 `sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
 #### Changes in config
+TODO: should already be done through the .dotfiles now.
 In `~/.oh-my-zsh/lib/misc.zsh`, change:\
 `env_default 'LESS' '-R'`   (when using git diff (or other similar commands), shows results in an alternate screen)\
 to:\
