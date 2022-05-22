@@ -49,27 +49,6 @@ sudo pacman -S flake8 python-flake8-docstrings
 pip install pep8-naming flake8-import-order flake8-bugbear pylsp-mypy
 ```
 
-Default `setup.cfg` file:
-```
-[flake8]
-max-line-length = 120
-docstring-convention = google
-import-order-style = smarkets
-
-ignore =
-    D1      # Do not require docstrings
-    W503  # Line break occurred before a binary operator  (Should already be gone so...)
-    E226  # Missing whitespace around arithmetic operator  --> 0.1*b + 0.2*c is considered "wrong"
-
-
-[mypy]
-ignore_missing_imports = True
-
-per-file-ignores =
-    config/*: E221
-```
-TODO: see what using `max-complexity = 10` would do.
-
 ### Optional
 ```
 sudo pacman -S mypy
