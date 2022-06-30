@@ -130,7 +130,7 @@ sudo rm -r yay
 
 ### Fonts
 ```
-pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation
+pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation noto-fonts-emoji
 ```
 
 #### Pacman
