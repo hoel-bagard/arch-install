@@ -58,6 +58,14 @@ sudo systemctl enable bluetooth
 ```
 reboot.
 
+## Japanese keyboard layout
+```
+sudo pacman -S fcitx5 fcitx5-mozc fcitx5-configtool fcitx5-qt fcitx5-gtk
+```
+
+The environment variables are in the `.zshrc`.
+
+
 ## I3
 https://i3wm.org/docs/userguide.html  
 https://wiki.archlinux.org/title/I3  
