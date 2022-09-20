@@ -50,7 +50,7 @@ sudo pacman -S python-pip ipython
 ### Flake8 setup
 ```
 sudo pacman -S flake8 python-flake8-docstrings
-pip install pep8-naming flake8-import-order flake8-bugbear 
+pip install pep8-naming flake8-import-order flake8-bugbear flake8-quotes flake8-comprehensions
 ```
 
 ### Typing / Testing
