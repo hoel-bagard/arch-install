@@ -38,6 +38,10 @@ git config --global user.signingkey <GPG key ID>
 git config --global commit.gpgsign true
 ```
 
+#### Pre-commit
+```
+sudo pacman -S python-pre-commit
+```
 
 ## Python
 ```
@@ -46,13 +50,21 @@ sudo pacman -S python-pip ipython
 ### Flake8 setup
 ```
 sudo pacman -S flake8 python-flake8-docstrings
-pip install pep8-naming flake8-import-order flake8-bugbear pylsp-mypy
+pip install pep8-naming flake8-import-order flake8-bugbear 
 ```
 
-### Optional
+### Typing / Testing
 ```
-sudo pacman -S mypy
+sudo pacman -S pyright python-pytest
 ```
+
+#### Mypy
+Note: I don't use it anymore since pyright is much better.
+```
+sudo pacman -S mypy pylsp-mypy
+```
+
+#### Misc
 To use importmagic within spacemacs (I usually don't, it floods the buffers):
 ```
 pip install importmagic epc 
