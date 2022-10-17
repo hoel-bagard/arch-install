@@ -28,7 +28,16 @@ Include = /etc/pacman.d/mirrorlist
 ```
 
 ## Office vpn
+### OpenVPN
+Install the packages:
+```
+sudo pacman -S openvpn networkmanager-openvpn
+```
 
+Get the client configuration file (pinned in the conversation with Sugihara-san) and copy it to `/etc/openvpn/client/xc_client.ovpn`.\
+You can then connect and disconnect to the office VPN using the commands `connect-vpn` and `disconnect-vpn` (defined in the zsh aliases).
+
+### L2TP
 To use with NetworkManager, install the [networkmanager-l2tp](https://archlinux.org/packages/community/x86_64/networkmanager-l2tp/) and [strongswan](https://archlinux.org/packages/community/x86_64/strongswan/) packages, then restart NetworkManager:
 ```
 sudo pacman -S strongswan networkmanager-l2tp
@@ -48,5 +57,3 @@ nmcli c add con-name $CON_NAME type VPN vpn-type l2tp vpn.data "gateway=$GATEWAY
 You can delete the created connection with `nmcli c delete $CON_NAME` if something went wrong.
 
 (Note for self: the XC credentials are in the conversation with myself on slack (it's pinned and tagged with "VPN"))
-
-[This guide](https://gist.github.com/pastleo/aa3a9524664864c505d637b771d079c9) is slightly outdated, but still usefull (especially if using the GUI since I'm too lazy to redo the screenshots, the KDE Plasma bug has been solved though).
