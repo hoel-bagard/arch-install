@@ -6,7 +6,7 @@ And install the corresponding driver (usually nvidia, probably already installed
 Install [Plasma](https://wiki.archlinux.org/title/KDE#Plasma) with `sudo pacman -S plasma` (the plasma package has  a fair amount of bloat).\
 Enable sddm to have the lockscreen after boot:
 ```
-systemctl enable sddm
+sudo systemctl enable sddm
 ```
 Also, enable NetworkManager to get the wifi:   (Move this part to the main install?)
 ```
@@ -26,7 +26,7 @@ sudo pacman -S kate kcalc kdialog konsole
 
 #### [Graphics](https://archlinux.org/packages/extra/any/kde-graphics-meta/)
 ```
-sudo pacman -S gwenview svgpart spectacle okular kolourpaint kipi-plugins kdegraphics-thumbnailers 
+sudo pacman -S gwenview svgpart spectacle okular kolourpaint kdegraphics-thumbnailers 
 ```
 
 #### [System](https://archlinux.org/packages/extra/any/kde-system-meta/)
