@@ -47,7 +47,14 @@ sudo pacman -S python-pre-commit
 ```
 sudo pacman -S python-pip ipython
 ```
-### Flake8 setup
+### Linting
+
+#### Ruff
+```
+sudo pacman ruff
+```
+
+#### Flake8 setup (obsolete)
 ```
 sudo pacman -S flake8 python-flake8-docstrings
 pip install pep8-naming flake8-import-order flake8-bugbear flake8-quotes flake8-comprehensions
