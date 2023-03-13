@@ -118,16 +118,6 @@ pacman -S openssh
 systemctl enable sshd.service
 ```
 
-### Yay
-Must be done as a normal sudo user (you might want to reboot and check that everything work).
-```
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-sudo rm -r yay
-```
-
 ### Fonts
 ```
 pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation noto-fonts-emoji
@@ -135,3 +125,13 @@ pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-
 
 #### Pacman
 Optional: add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color` in `/etc/pacman.conf`.
+
+### Yay
+Must be done as a normal sudo user (you might want to reboot and check that everything works).
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -r yay
+```
