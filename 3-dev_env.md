@@ -43,6 +43,13 @@ git config --global commit.gpgsign true
 sudo pacman -S python-pre-commit
 ```
 
+## Rust
+
+```
+sudo pacman -S rustup
+rustup default stable
+```
+
 ## Python
 ```
 sudo pacman -S python-pip ipython
