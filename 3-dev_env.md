@@ -46,7 +46,7 @@ sudo pacman -S python-pre-commit
 ## Rust
 
 ```
-sudo pacman -S rustup
+sudo pacman -S rustup rust-analyzer
 rustup default stable
 ```
 
