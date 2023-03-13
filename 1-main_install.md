@@ -1,8 +1,8 @@
 # Main Install
 ### Early commands
-loadkeys jp106\
+`loadkeys jp106`\
 Check if in efi mode: `ls /sys/firmware/efi/efivars`  (should execute without error)\
-timedatectl set-ntp true
+`timedatectl set-ntp true`
 
 ## Partition the disks
 ### Create the partitions
@@ -33,7 +33,7 @@ reflector --verbose --protocol https --latest 50 --sort rate --save /etc/pacman.
 ```
 ### Install essential packages
 ```
-pacstrap /mnt base base-devel linux-lts linux-lts-headers nvidia-dkms linux-firmware bash-completion vim nano dhcpcd
+pacstrap /mnt base base-devel linux-lts linux-lts-headers nvidia-dkms linux-firmware bash-completion neovim dhcpcd
 ```
 
 ## Configure the system
