@@ -35,6 +35,7 @@ sudo pacman -S openvpn networkmanager-openvpn
 ```
 
 Get the client configuration file (pinned in the conversation with Sugihara-san) and copy it to `/etc/openvpn/client/xc_client.ovpn`.\
+Get the username and password (look for #VPN in conversation with self) and put them in `/etc/openvpn/client/credentials.txt`. (username on first line, password on the second)\
 You can then connect and disconnect to the office VPN using the commands `connect-vpn` and `disconnect-vpn` (defined in the zsh aliases).
 
 ### L2TP
