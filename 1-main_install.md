@@ -120,7 +120,11 @@ systemctl enable sshd.service
 
 ### Fonts
 ```
-pacman -S noto-fonts adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation noto-fonts-emoji
+pacman -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation
+```
+Japanese fonts:
+```
+pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts otf-ipafont ttf-sazanami adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts ttf-hanazono
 ```
 
 #### Pacman
