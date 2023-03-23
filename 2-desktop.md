@@ -87,3 +87,16 @@ From the AUR:
 ```
 yay -S google-chrome anki via-bin
 ```
+
+## Scrcpy
+```
+sudo pacman -S android-tools
+sudo pacman -S scrcpy
+```
+
+Enable USB (and optionnaly wifi) debugging on the phone, then connect it with USB and authorize the PC. Finally, check that the phone is detected with `adb devices`.\
+Get the phone's IP address in `Settings > About phone.` and connect to it through wifi with:
+```
+adb connect 192.168.0.236:5555
+scrcpy
+```
