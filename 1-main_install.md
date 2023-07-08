@@ -74,7 +74,7 @@ systemctl enable dhcpcd
 Set root password: `passwd` 
 
 Install more packages:\
-(Replace amd-ucode by intel-ucode depending on the cpu brand)\
+(Replace amd-ucode by intel-ucode depending on the cpu brand)
 ```
 pacman -S amd-ucode man-db pciutils wget git exa htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs
 ```
