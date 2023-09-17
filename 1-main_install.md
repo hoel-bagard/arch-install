@@ -128,7 +128,10 @@ pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts otf-ipafont ttf-sazanami ad
 ```
 
 #### Pacman
-Optional: add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color` in `/etc/pacman.conf`.
+In `/etc/pacman.conf`:
+- Add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color`.
+- To see old and new versions of available packages, uncomment `VerbosePkgLists`.
+- Allow parallel downloads by uncommenting `ParallelDownloads`.
 
 ### Yay
 Must be done as a normal sudo user (you might want to reboot and check that everything works).
