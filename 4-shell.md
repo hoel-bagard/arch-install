@@ -5,7 +5,7 @@
 `sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
 #### Changes in config
 In `~/.oh-my-zsh/lib/misc.zsh`, change:\
-`env_default 'PAGER' 'bat'` -> `env_default 'PAGER' 'bat'`\
+`env_default 'PAGER' 'less'` -> `env_default 'PAGER' 'bat'`\
 `env_default 'LESS' '-R'` ->  `env_default 'LESS' '-FRSX'`\
 And add:\
 `env_default "BAT_PAGER" = "less -iRx4"`
