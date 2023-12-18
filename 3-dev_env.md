@@ -94,7 +94,7 @@ Notes:
  
 ## Spacemacs
 ```
-sudo pacman -S emacs aspell
+sudo pacman -S emacs aspell-en
 git clone --single-branch --branch develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
