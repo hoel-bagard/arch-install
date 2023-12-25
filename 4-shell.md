@@ -36,6 +36,7 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> ~/.z
 ```
 git clone --separate-git-dir=$HOME/.dotfiles git@github.com:hoel-bagard/.dotfiles.git $HOME/myconf-tmp --recurse-submodules
 mv -v ~/myconf-tmp/.* ~/
+mv -v ~/myconf-tmp/*.* ~/
 mv -v ~/myconf-tmp/README.md ~/
 rmdir myconf-tmp
 source ~/.zshrc
