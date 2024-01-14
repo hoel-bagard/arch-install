@@ -13,14 +13,14 @@ List devices: `fdisk -l`\
 Rest to root partition
 
 ### Format the partitions:
-```
+```console
 mkfs.vfat /dev/boot_partition -n BOOT
 mkswap /dev/swap_partition -L SWAP
 mkfs.ext4 /dev/root_partition -L ROOT
 ```
 
 ### Mount the file systems
-```
+```console
 mount /dev/root_partition /mnt
 mkdir /mnt/boot
 mount /dev/boot_partition /mnt/boot
@@ -28,42 +28,42 @@ swapon /dev/swap_partition
 ```
 
 ### Select mirrors
-```
+```console
 reflector --verbose --protocol https --latest 50 --sort rate --save /etc/pacman.d/mirrorlist
 ```
 ### Install essential packages
-```
+```console
 pacstrap /mnt base base-devel linux-lts linux-lts-headers nvidia-dkms linux-firmware bash-completion neovim dhcpcd
 ```
 
 ## Configure the system
-Fstab: 
-```
+Fstab:
+```console
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 Note: then edit the fstab to change the relatime to noatime.\
 Chroot:
-```
+```console
 arch-chroot /mnt
 ```
 
 Remove the annoying beeping sound with `rmmod pcspkr`.
 
 Time:
-```
+```console
 ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 hwclock --systohc
 ```
 
 Localization:\
 Uncomment `en_US.UTF-8 UTF-8` in `/etc/locale.gen` and then run `locale-gen`
-```
+```console
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=jp106" >> /etc/vconsole.conf
 ```
 
 Network configuration (change myhostname to a proper name):
-```
+```console
 echo "myhostname" >> /etc/hostname
 echo "127.0.0.1	localhost" >> /etc/hosts
 echo "::1		localhost" >> /etc/hosts
@@ -71,12 +71,12 @@ echo "127.0.1.1	myhostname.localdomain	myhostname" >> /etc/hosts
 systemctl enable dhcpcd
 ```
 
-Set root password: `passwd` 
+Set root password: `passwd`
 
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)
-```
-pacman -S amd-ucode man-db pciutils wget git exa htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs
+```console
+pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs pacman-contrib
 ```
 (Use the `updatedb` command to create the locate database)\
 **Note1**: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping)).\
@@ -86,7 +86,7 @@ pacman -S amd-ucode man-db pciutils wget git exa htop nvtop bat mlocate rsync ri
 ## Boot loader (grub):
 [grub-mkconfig will automatically detect the microcode update and configure GRUB appropriately. After installing the microcode package, regenerate the GRUB config to activate loading the microcode update by running:
 ](https://wiki.archlinux.org/title/microcode)
-```
+```console
 pacman -S grub efibootmgr
 mkdir /boot/efi
 mount /dev/sda1 /boot/efi
@@ -95,7 +95,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Sudo
-```
+```console
 pacman -S sudo
 groupadd sudo
 EDITOR=vim visudo
@@ -103,7 +103,7 @@ EDITOR=vim visudo
 --> uncomment `sudo ALL=(ALL) ALL`
 
 Add a sudo user:
-```
+```console
 useradd -m hoel
 usermod -aG sudo hoel
 passwd hoel
@@ -113,17 +113,18 @@ passwd hoel
 ## Others:
 ### SSH
 #### Install and enable (especially for servers)
-```
+```console
 pacman -S openssh
 systemctl enable sshd.service
 ```
 
 ### Fonts
-```
+```console
 pacman -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation
 ```
+
 Japanese fonts:
-```
+```console
 pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts otf-ipafont ttf-sazanami adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts ttf-hanazono
 ```
 
@@ -135,7 +136,7 @@ In `/etc/pacman.conf`:
 
 ### Yay
 Must be done as a normal sudo user (you might want to reboot and check that everything works).
-```
+```console
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si

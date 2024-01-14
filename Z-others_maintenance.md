@@ -56,5 +56,3 @@ PASSWORD=random_string
 nmcli c add con-name $CON_NAME type VPN vpn-type l2tp vpn.data "gateway=$GATEWAY_HOST, ipsec-enabled=yes, ipsec-psk=$PRE_SHARED_KEY, password-flags=0, user=$USERNAME" vpn.secrets password=$PASSWORD
 ```
 You can delete the created connection with `nmcli c delete $CON_NAME` if something went wrong.
-
-(Note for self: the XC credentials are in the conversation with myself on slack (it's pinned and tagged with "VPN"))
