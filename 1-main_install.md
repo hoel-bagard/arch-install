@@ -76,7 +76,7 @@ Set root password: `passwd`
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)
 ```console
-pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs pacman-contrib
+pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs
 ```
 (Use the `updatedb` command to create the locate database)\
 **Note1**: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping)).\
@@ -109,7 +109,6 @@ usermod -aG sudo hoel
 passwd hoel
 ```
 
-
 ## Others:
 ### SSH
 #### Install and enable (especially for servers)
@@ -128,11 +127,24 @@ Japanese fonts:
 pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts otf-ipafont ttf-sazanami adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts ttf-hanazono
 ```
 
-#### Pacman
+### Pacman
 In `/etc/pacman.conf`:
 - Add a nice [colored output](https://wiki.archlinux.org/title/Color_output_in_console#pacman) by uncommenting `Color`.
 - To see old and new versions of available packages, uncomment `VerbosePkgLists`.
 - Allow parallel downloads by uncommenting `ParallelDownloads`.
+
+#### [Cleaning the package cache](https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache)
+
+Install `pacman-contrib` to get paccache.
+```console
+pacman -S pacman-contrib
+```
+
+Set paccache to discard unused packages weekly:
+```console
+systemctl enable paccache.timer
+systemctl start paccache.timer
+```
 
 ### Yay
 Must be done as a normal sudo user (you might want to reboot and check that everything works).
