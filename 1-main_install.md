@@ -119,7 +119,7 @@ systemctl enable sshd.service
 
 ### Fonts
 ```console
-pacman -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation
+pacman -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adobe-source-code-pro-fonts ttf-roboto ttf-dejavu ttf-liberation ttf-jetbrains-mono-nerd
 ```
 
 Japanese fonts:
