@@ -1,4 +1,4 @@
-# Dev environment setup
+G# Dev environment setup
 ## GitHub
 ### Generating keys and adding them to github
 #### SSH key
@@ -108,7 +108,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Spacemacs
 ```console
-sudo pacman -S emacs aspell-en shfmt bash-language-server
+sudo pacman -S emacs aspell-en shfmt bash-language-server yaml-language-server
 git clone --single-branch --branch develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
