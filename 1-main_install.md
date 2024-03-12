@@ -76,8 +76,9 @@ Set root password: `passwd`
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)
 ```console
-pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs
+pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs zoxide fzf
 ```
+
 (Use the `updatedb` command to create the locate database)\
 **Note1**: htop could be replaced by [bottom](https://github.com/ClementTsang/bottom) (basically htop on steroid + [gping](https://github.com/orf/gping)).\
 **Note2**: The default du command can be replaced by [dust](https://github.com/bootandy/dust)\
