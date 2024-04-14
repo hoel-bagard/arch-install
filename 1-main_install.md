@@ -76,7 +76,7 @@ Set root password: `passwd`
 Install more packages:\
 (Replace amd-ucode by intel-ucode depending on the cpu brand)
 ```console
-pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep git-delta unzip sshfs zoxide fzf
+pacman -S amd-ucode man-db pciutils wget git eza htop nvtop bat mlocate rsync ripgrep fd git-delta unzip sshfs zoxide fzf
 ```
 
 (Use the `updatedb` command to create the locate database)\
