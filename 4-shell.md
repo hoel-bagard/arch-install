@@ -1,7 +1,7 @@
 # Shell
 ## zsh
 ```console
-sudo pacman -S zsh neofetch
+sudo pacman -S zsh fastfetch
 ```
 
 ### oh-my-zsh
