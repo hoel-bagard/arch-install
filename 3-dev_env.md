@@ -106,6 +106,12 @@ sudo pacman -S tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+### Neovim
+```
+sudo pacman -S stylua
+```
+(stylua is a formatter for lua)
+
 ### Spacemacs
 ```console
 sudo pacman -S emacs aspell-en shfmt bash-language-server yaml-language-server yamllint actionlint
