@@ -108,9 +108,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Neovim
 ```
-sudo pacman -S stylua wl-clipboard
+sudo pacman -S stylua wl-clipboard kitty
 ```
-(stylua is a formatter for lua, `wl-clipboard` is to be able to share the clipboard (if it does not work, try `xclip`))
+
+- `stylua` is a formatter for lua
+- `wl-clipboard` is to be able to share the clipboard (if it does not work, try `xclip`))
+- `kitty` and `ueberzugpp` are for viewing images.
 
 ### Spacemacs
 ```console
