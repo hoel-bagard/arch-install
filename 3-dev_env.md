@@ -108,7 +108,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Neovim
 ```
-sudo pacman -S stylua wl-clipboard kitty
+sudo pacman -S stylua wl-clipboard kitty ueberzugpp
 ```
 
 - `stylua` is a formatter for lua
