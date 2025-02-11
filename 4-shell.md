@@ -30,7 +30,7 @@ cd ..
 rmdir temp_fonts
 ```
 
-<details>
+</details>
 
 ### Clone .dotfiles
 See instructions [here](https://github.com/hoel-bagard/.dotfiles).
