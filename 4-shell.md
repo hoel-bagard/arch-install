@@ -1,16 +1,21 @@
 # Shell
+
 ## zsh
+
 ```console
 sudo pacman -S zsh fastfetch
 ```
 
 ### oh-my-zsh
+
 ```zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
 ### powerlevel10k
+
 #### Fonts
+
 Follow the instructions [here](https://github.com/romkatv/powerlevel10k#manual-font-installation) corresponding to the terminal you use.
 
 For WezTerm no change is required.
@@ -33,4 +38,5 @@ rmdir temp_fonts
 </details>
 
 ### Clone .dotfiles
+
 See instructions [here](https://github.com/hoel-bagard/.dotfiles).
