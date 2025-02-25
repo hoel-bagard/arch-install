@@ -143,6 +143,14 @@ pacman -S openssh
 systemctl enable sshd.service
 ```
 
+### Laptop
+
+On laptops, to be able to easily control the power profile:
+
+```bash
+pacman -S power-profiles-daemon
+```
+
 ### Fonts
 
 ```console
