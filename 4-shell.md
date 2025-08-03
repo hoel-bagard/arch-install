@@ -1,5 +1,12 @@
 # Shell
 
+## nushell
+
+```bash
+sudo pacman -S nushell
+yay -S carapace-bin
+```
+
 ## zsh
 
 ```console
